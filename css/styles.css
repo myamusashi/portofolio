@@ -1,0 +1,39 @@
+/* header { */
+/*   background-color: #21130d; */
+/* } */
+
+.container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.logo {
+  text-decoration: none;
+  outline: none;
+  color: #979cc2;
+  font-size: 24px;
+  font-family: "Advent Pro", sans-serif;
+  font-weight: 700;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+}
+
+.item .link {
+  color: #5a8aee;
+  text-decoration: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.nav .item {
+  margin-left: 15px;
+}
+
+.nav .item:first-child {
+  margin-left: 0; 
+}
