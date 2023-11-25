@@ -1,45 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Portofolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>Portofolio</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;700&display=swap" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
-</head>
-
-<body>
-  <header>
-    <!-- Page Navbar -->
-    <nav class="navbar" data-spy="affix" data-offset-top="20">
+  <body>
+    <header class="header">
+      <!-- Page Navbar -->
       <div class="container">
-        <a class="logo" href="#">Gilang</a>
-        <ul class="nav">
-          <li class="item">
-            <a class="link" href="#home">Home</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#about">About</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#portfolio">Portfolio</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#blog">Blog</a>
-          </li>
-          <li class="item">
-            <a class="link" href="#contact">Contact</a>
-        </ul>
+        <div class="profile-section">
+          <a class="logo" href="">Gilang</a>
+        </div>
+
+        <nav class="navbar" data-spy="affix" data-offset-top="20">
+          <ul class="nav">
+            <li class="item">
+              <a class="link" href="#home">Home</a>
+            </li>
+            <li class="item">
+              <a class="link" href="#about">About</a>
+            </li>
+            <li class="item">
+              <a class="link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="item">
+              <a class="link" href="#blog">Blog</a>
+            </li>
+            <li class="item">
+              <a class="link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </nav>
-    <!-- End of Page Navbar -->
-  </header>
+      <!-- End of Page Navbar -->
+    </header>
 
-  <div class="about">
-    <img src="" alt="">
+    <main>
+      <!-- Main content -->
+      <section id="home" class="content-home">
+        <div class="content-wrapper">
+          <div class="image-column">
+            <img
+              src="images/PXL_20231123_150540106.jpg"
+              alt="picture"
+              width="700px"
+            />
+          </div>
+          <div class="text-column">
+            <h1>Perkenalkan nama saya Gilang Ramadhan</h1>
+            <p>
+              Saya adalah seorang mahasiswa Programmer yang berfokus pada
+              pengembangan Website
+            </p>
+          </div>
+        </div>
+      </section>
 
-  </div>
-</body>
+      <section id="about" class="content-about">
+        <h2>Tentang saya</h2>
+        <p>
+          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+          cillum sint consectetur cupidatat.
+        </p>
+      </section>
 
+      <section id="portfolio" class="content-portofolio">
+        <h2>Projek saya</h2>
+        <div class="project">
+          <h3>1. Nama project</h3>
+          <p>
+            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+            cillum sint consectetur cupidatat.
+          </p>
+        </div>
+        <div class="project">
+          <h3>2. Nama project</h3>
+          <p>
+            Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+            cillum sint consectetur cupidatat.
+          </p>
+        </div>
+      </section>
+
+      <section id="blog" class="content-blog">
+        <h2>blog saya</h2>
+        <p>
+          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+          cillum sint consectetur cupidatat.
+        </p>
+      </section>
+
+      <section id="contact" class="content-contact">
+        <h2>Kontak saya</h2>
+        <p>
+          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+          cillum sint consectetur cupidatat.
+        </p>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
 </html>
