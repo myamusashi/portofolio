@@ -9,21 +9,20 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/confirm", IndexPost)
+	http.HandleFunc("/confirm", Indexconfirm)
 
-	fs := http.FileServer(http.Dir("./static/public_html"))
-	http.Handle("/", fs)
+	fs := http.FileServer(http.Dir("static"))
+	http.Handle("/", http.StripPrefix("/", fs))
 
 	port := ":4444"
-
-	fmt.Printf("Listening on localhost%v", port)
 	http.ListenAndServe(port, nil)
-
 }
 
-func IndexPost(w http.ResponseWriter, r *http.Request) {
+func Indexconfirm(w http.ResponseWriter, r *http.Request) {
 	if r.Method == "POST" {
-		var tmpl = template.Must(template.New("result").ParseFiles("static/templates/confirmation.html"))
+		tmpl := template.Must(
+			template.New("result").ParseFiles("static/templates/confirmation.html"),
+		)
 
 		if err := r.ParseForm(); err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
