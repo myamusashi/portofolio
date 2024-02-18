@@ -2,5 +2,4 @@
 .git
 main
 static/templates/index.html
-Dockerfile
 rice-box.go
