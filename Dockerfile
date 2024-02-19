@@ -1,7 +1,13 @@
-FROM golang:1.22.0-bookworm AS build-stage
-RUN mkdir -p /build/static/
+FROM golang:1.22-bullseye as builder
+
+RUN mkdir -p /build/
 WORKDIR /build
-COPY static/ /build/static
-COPY go.mod go.sum main.go /build/
+
+COPY src/go.* /build/
+RUN go mod download
+
+COPY src/main.go /build/
+COPY src/static/ /build/static/
 RUN go build -o main
+
 CMD [ "./main" ]
