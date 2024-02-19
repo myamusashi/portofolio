@@ -1,0 +1,57 @@
+{{define "result"}}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <style>
+      .confirm_container {
+        display: grid;
+        margin-top: 20%;
+        justify-content: center;
+      }
+      .confirm {
+        justify-self: center;
+        color: #4c4f69;
+      }
+      .button {
+        color: #181926;
+        padding: 15px 32px;
+        display: inline-block;
+        margin: 4px 2px;
+        border: none;
+        font-size: 16px;
+        text-align: center;
+        cursor: pointer;
+        background-color: #b8c0e0;
+        transition: 0.4s ease-in;
+      }
+      .button:hover {
+        color: #cad3f5;
+        background-color: #1e2030;
+        transition: 0.4s ease-out;
+      }
+    </style>
+    <div class="confirm_container">
+      <h1 class="title confirm">Pesan anda sudah terkirim!</h1>
+      <p class="section__text__p1">
+        Pesan anda akan saya baca dan akan membalas secepat mungkin
+      </p>
+      <hr style="width: 100%; color: #9ca0b0; margin: 2% 0 4% 0" ; />
+      <button class="button" type="submit">Kembali ke halaman awal</button>
+    </div>
+
+    <script>
+      const button = document.querySelector(".button");
+
+      button.addEventListener("click", () => {
+        location.href = "/";
+      });
+    </script>
+  </body>
+</html>
+{{end}}

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link rel="stylesheet" href="css/loading-animation.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Gilang Ramadhan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">contact</a></li>
+          <span class="change"></span>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Gilang Ramadhan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section class="profile" id="profile">
+      <div class="section__pic-container">
+        <img
+          src="images/profile-.png"
+          alt="Gilang ramadhan Profile picture"
+          loading="lazy"
+        />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Gilang Ramadhan</h1>
+        <p class="section__text__p2">Web & C++ Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/images/blank-profile-picture-973460_1280.png')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact info
+          </button>
+        </div>
+        <div id="socials-container">
+          <p
+            class="icon linkedin"
+            onclick="location.href='https://linkedin.com/'"
+          >
+            
+          </p>
+          <!-- <img -->
+          <!--   src="assets/linkedin.png" -->
+          <!--   alt="My linkedin profile" -->
+          <!--   class="icon" -->
+          <!--   onclick="location.href='https://linkedin.com/'" -->
+          <!-- /> -->
+          <p class="icon github" onclick="location.href='https://github.com/'">
+            󰊤
+          </p>
+          <!-- <img -->
+          <!--   src="./assets/github.png" -->
+          <!--   alt="My github profile" -->
+          <!--   class="icon" -->
+          <!--   onclick="location.href='https://github.com/'" -->
+          <!-- /> -->
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <p class="section__text__p1">Get to know more</p>
+      <h1 class="title">Tentang Saya</h1>
+      <div class="section-container">
+        <div class="section__pic-container pic_1">
+          <img
+            src="images/Desain tanpa judul.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="box-container">
+            <div class="about-containers">
+              <div class="details-container">
+                <img
+                  src="assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>
+                  1+ Years contributions <br />
+                  open Source projects
+                </p>
+              </div>
+              <div class="details-container">
+                <img
+                  src="assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Education</h3>
+                <p>Mahasiswa<br />Universitas Pamulang</p>
+              </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Saya adalah seorang web developer dan C++ developer berbasis di
+                Depok, Indonesia, yang telah aktif di dunia teknologi sejak
+                tahun 2021. Saat ini, saya sedang mengejar pendidikan di
+                Universitas Pamulang, dimana saya terus mengembangkan
+                keterampilan dan pengetahuan saya dalam dunia pemrograman.
+                Selama waktu luang saya, saya memiliki dua minat utama. Pertama,
+                saya suka bermain game, yang memicu imajinasi dan kreativitas
+                saya. Kedua, saya mendedikasikan waktu saya untuk membangun
+                proyek-proyek pribadi yang memungkinkan saya untuk
+                mengaplikasikan dan mengasah kemampuan pemrograman saya.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section class="experience" id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skill yang saya Pelajari</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container" id="child__container">
+            <div class="article-container">
+              <h2 class="experience-sub-title frontend">
+                Frontend Development
+              </h2>
+              <article>
+                <p class="icon__experience html"></p>
+                <!-- <img -->
+                <!--   src=".//assets/html.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <p class="icon__experience css"></p>
+                <!-- <img -->
+                <!--   srcicon__experienceassets/css-3.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <p class="icon__experience javascript"></p>
+                <!-- <img -->
+                <!--   src=".//assets/java-script.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>JAVASCRIPT</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <p class="icon__experience material_ui">󰍗</p>
+                <!-- <img -->
+                <!--   src=".//assets/material_ui.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>MATERIAL UI</h3>
+                  <p>Soon</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="details-container">
+            <div class="article-container">
+              <h2 class="experience-sub-title">Backend Development</h2>
+              <article>
+                <p class="icon__experience go"></p>
+                <!-- <img src=".//assets/go.png" alt="experience icon" class="icon" /> -->
+                <div>
+                  <h3>GOLANG</h3>
+                  <p>Soon</p>
+                </div>
+              </article>
+              <article>
+                <p class="icon__experience sql"></p>
+                <!-- <img -->
+                <!--   src=".//assets/sql-server.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>SQL</h3>
+                  <p>Soon</p>
+                </div>
+              </article>
+              <article>
+                <p class="icon__experience mongodb"></p>
+                <!-- <img -->
+                <!--   src=".//assets/mongodb.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Additional Skills -->
+          <div class="details-container">
+            <div class="article-container">
+              <h2 class="experience-sub-title">Additional Skills</h2>
+              <article>
+                <p class="icon__experience cpp"></p>
+                <!-- <img -->
+                <!--   src=".//assets/cpp.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>C++</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <p class="icon__experience git">󰊢</p>
+                <!-- <img -->
+                <!--   src=".//assets/git.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>GIT</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <p class="icon__experience wordpress"></p>
+                <!-- <img -->
+                <!--   src=".//assets/wordpress-logo.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>WORDPRESS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <p class="icon__experience docker">󰡨</p>
+                <!-- <img -->
+                <!--   src=".//assets/docker.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>Docker</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <p class="icon__experience linux"></p>
+                <!-- <img -->
+                <!--   src=".//assets/linux-platform.png" -->
+                <!--   alt="experience icon" -->
+                <!--   class="icon" -->
+                <!-- /> -->
+                <div>
+                  <h3>Linux</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section class="projects" id="projects">
+      <p class="section__text__p1">See My</p>
+      <h1 class="title">Projects Yang saya buat</h1>
+      <div class="projects-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            Project 1
+            <h1>Task List Management</h1>
+            <p>
+              Menggunakan C++ sebagai bahasanya dan MongoDB untuk menyimpan data
+              login dan tugas
+            </p>
+            <video width="320" height="240" autoplay>
+              <source src="assets/project_TLM.webm" />
+            </video>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('https://asciinema.org/a/VXQWookwKEJDGxSei5mDP3uQ0')"
+              >
+                See more video
+              </button>
+              <button
+                class="btn btn-color-2"
+                onclick="window.open('https://github.com/myamusashi/task-list-management')"
+              >
+                Source code
+              </button>
+            </div>
+          </div>
+          <div class="details-container">Project 2</div>
+        </div>
+      </div>
+      <img
+        src="assets/arrow.png"
+        alt="arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section class="contact" id="contact">
+      <p class="section__text__p1">Get Me</p>
+      <h1 class="title">Hubungi Saya</h1>
+      <div class="contact-container">
+        <form method="POST" action="/confirm">
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Nama Depan"
+          />
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Nama Belakang"
+          />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+          />
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 100px"
+          ></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
+    <div class="loader"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
