@@ -1,6 +1,0 @@
-services:
-  frontend:
-    container_name: frontend
-    image: ghcr.io/myamusashi/portofolio:latest
-    ports:
-      - 80:80

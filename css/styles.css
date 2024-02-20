@@ -368,6 +368,10 @@ section {
 }
 
 /* Contact-Us container */
+.contact {
+  margin-bottom: 2%;
+}
+
 input[type="text"],
 select,
 textarea {
