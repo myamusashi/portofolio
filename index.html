@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    <script src="js/iseng.js"></script>
     <nav id="desktop-nav">
       <div class="logo">Gilang Ramadhan</div>
       <div>
@@ -364,11 +365,12 @@
       <p class="section__text__p1">Get Me</p>
       <h1 class="title">Hubungi Saya</h1>
       <div class="contact-container">
-        <form method="POST" action="/confirm">
+        <form method="POST" action="/">
           <input
             type="text"
             id="fname"
             name="firstname"
+            onclick="result()"
             placeholder="Nama Depan"
           />
           <input
